@@ -281,11 +281,6 @@ export const requestVerification = (verificationData: Omit<VerificationRequest, 
 };
 
 
-
-
-
-
-
 export const approveVerification = (taskId: string, approvalComment: string) => {
   const taskIndex = tasks.findIndex(t => t.id === taskId);
   if (taskIndex !== -1 && tasks[taskIndex].verificationRequest) {
